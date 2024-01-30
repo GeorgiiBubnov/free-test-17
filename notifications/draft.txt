@@ -1,0 +1,7 @@
+6896079990:AAGOqBHVeBmjUHcnWx_Ejyl4PA-jKED4fCY
+
+-1002078893391
+
+https://api.telegram.org/bot6896079990:AAGOqBHVeBmjUHcnWx_Ejyl4PA-jKED4fCY/getUpdates
+
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1002078893391", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot6896079990:AAGOqBHVeBmjUHcnWx_Ejyl4PA-jKED4fCY/sendMessage
