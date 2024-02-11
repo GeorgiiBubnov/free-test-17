@@ -3,7 +3,6 @@ package tests;
 import data.Language;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -51,7 +50,7 @@ public class CyntekaTest extends TestBase {
 
     static Stream<Arguments> checkDisplayCorrectButtons() {
         return Stream.of(
-                Arguments.of(Language.Русский,
+                Arguments.of(Language.RU,
                         List.of("Главная", "Возможности", "Кейсы", "О нас",
                                 "Контакты"))
         );

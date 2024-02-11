@@ -49,7 +49,7 @@ public class MainPage {
 
     @Step("Выбор соответствующего языка {0}")
     public MainPage chooseLanguage(Language language) {
-        languageElement.$(byText(language.name())).click();
+        languageElement.$(byText(language.getName())).click();
 
         return this;
 
@@ -57,7 +57,7 @@ public class MainPage {
 
     @Step("Проверка заголовка на соответствующем языке {0}")
     public MainPage checkTitle(Language language) {
-        title.shouldHave(text(language.description));
+        title.shouldHave(text(language.getDescription()));
 
         return this;
     }

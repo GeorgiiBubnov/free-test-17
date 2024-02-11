@@ -18,6 +18,7 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
 
+
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = System.getProperty("browserVersion", "100.00");
@@ -33,7 +34,6 @@ public class TestBase {
         ));
         Configuration.browserCapabilities = capabilities;
     }
-
 
 
     @BeforeEach
